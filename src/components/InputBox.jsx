@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 
 class FormsAndInputs extends Component {
     constructor(props) {
@@ -32,10 +32,10 @@ class FormsAndInputs extends Component {
         const {word} = this.state
         return (
             <div>
-                <p>input is: {word}</p>
+                <p>Input is: {word}</p>
                 <form onSubmit={this.handleSubmit}>
                     <p><input ref={this.inputRef} placeholder='type...' value={word} onChange={this.handleInputChange} name='word' /></p>
-                    <p><button onClick={this.handleClearClick}>enter!</button></p>
+                    <p><button onClick={this.handleClearClick}>Enter!</button></p>
                 </form>
             </div>
         )
@@ -51,5 +51,51 @@ class FormsAndInputs extends Component {
 //     )
 // }
 
-export default FormsAndInputs;
+export default FormsAndInputs; */
 
+// InputBox.jsx
+import React, { Component } from "react";
+
+class FormsAndInputs extends Component {
+    state = {
+        word: '',
+        wordList: []
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        const { word, wordList } = this.state;
+        // Basic validation - assuming valid word
+        if (word.trim() !== '') {
+            const updatedWordList = [...wordList, word.trim()];
+            this.setState({ wordList: updatedWordList, word: '' }, () => {
+                this.props.onWordsChange(updatedWordList);
+            });
+        }
+    };
+
+    handleInputChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    };
+
+    render() {
+        const { word } = this.state;
+        return (
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <input
+                        placeholder='type...'
+                        value={word}
+                        onChange={this.handleInputChange}
+                        name='word'
+                    />
+                    <button type="submit">Enter!</button>
+                </form>
+            </div>
+        );
+    }
+}
+
+export default FormsAndInputs;
