@@ -2,11 +2,11 @@ import React from "react";
 
 import './Letters.css'
 
-function Letter () {
+function Letter (character) {
 
     return (
         <div>
-            <button>L</button>
+            <button>{character.ind}</button>
         </div>
     )
 

@@ -1,20 +1,41 @@
-import React from "react";
+import React, { Component } from "react";
 
-class FormsAndInputs {
+class FormsAndInputs extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            word: ''
+        }
+        this.inputRef = React.createRef()
+    }
+
     handleSubmit = (event) => {
-        event.preventDefaul()
+        event.preventDefault()
+        const data = this.state
     }
 
-    handleInputChange = () => {
-
+    handleInputChange = (event) => {
+        event.preventDefault()
+        this.setState({
+            [event.target.name]: event.target.value
+        })
     }
+
+    handleClearClick = (event) => {
+        console.log(this.inputRef.current.value)
+        this.setState({
+            word: ''
+        })
+    }
+
     render () {
+        const {word} = this.state
         return (
             <div>
-                <h1>Forms and Inputs</h1>
-                <form method='POST' onSubmit={this.handleSubmit}>
-                    <p><input type='text' placeholder='type...' name='word' /></p>
-                    <p><button>type in a word: </button></p>
+                <p>input is: {word}</p>
+                <form onSubmit={this.handleSubmit}>
+                    <p><input ref={this.inputRef} placeholder='type...' value={word} onChange={this.handleInputChange} name='word' /></p>
+                    <p><button onClick={this.handleClearClick}>enter!</button></p>
                 </form>
             </div>
         )

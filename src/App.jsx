@@ -1,7 +1,7 @@
 
 import './App.css'
+import FormsAndInputs from './components/InputBox';
 import Letter from './components/Letters';
-import InputBox from './components/InputBox';
 
 function App() {
 
@@ -19,17 +19,17 @@ function App() {
         <main>
 
           <div className="Provided">
-            <Letter/>
-            <Letter/>
-            <Letter/>
-            <Letter/>
-            <Letter/>
-            <Letter/>
-            <Letter/>
+            <Letter ind = "A"/>
+            <Letter ind = "B"/>
+            <Letter ind = "C"/>
+            <Letter ind = "D"/>
+            <Letter ind = "A"/>
+            <Letter ind = "A"/>
+            <Letter ind = "A"/>
           </div>
 
           <div className="inputbox">
-            <InputBox/>
+            <FormsAndInputs/>
           </div>
 
 
@@ -41,4 +41,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
