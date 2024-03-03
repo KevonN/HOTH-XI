@@ -8,6 +8,11 @@
   justify-content: space-between;
 }
 
+.word {
+  position: relative;
+  text-align: center;
+  margin: 7%;
 
-
-
+  display: flex;
+  justify-content: space-evenly;
+}

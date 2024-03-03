@@ -6,7 +6,7 @@ function Letter (character) {
 
     return (
         <div>
-            <button>{character.ind}</button>
+            <button id='letterButton'>{character.ind}</button>
         </div>
     )
 
