@@ -1,0 +1,46 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: rgba(236, 251, 255, 0.87);
+  background-color: #f7feff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  display: inline;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  position: center;
+  font-size: 3.2em;
+  width: 80% 80%;
+  line-height: 1.1;
+  text-align: center;
+}
+
+main {
+  position: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #293a49;
+    background-color: #eff8ff;
+  }
+  a:hover {
+    color: #88e4db;
+  }
+}
