@@ -14,7 +14,7 @@ class FormsAndInputs extends Component {
         const { word, wordList } = this.state;
         // Basic validation - assuming valid word
         if (word.trim() !== '') {
-            const updatedWordList = [...wordList, word.trim()];
+            const updatedWordList = [word.trim(), ...wordList];
             this.setState({ wordList: updatedWordList, word: '' }, () => {
                 this.props.onWordsChange(updatedWordList);
             });

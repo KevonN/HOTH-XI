@@ -2,7 +2,7 @@
 .Provided {
   position: relative;
   text-align: center;
-  margin: 7%;
+  margin: 3% 7%;
   width: 70% 70%;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,13 @@
   margin: auto;
   position: relative;
   text-align: center;
-  margin: 7%;
-
+  margin: 2% 7%;
   display: flex;
+  justify-content: center;
+}
+
+.inputBox {
+  margin: 0% 30%;
+  text-align: center;
+  justify-content: center;
 }

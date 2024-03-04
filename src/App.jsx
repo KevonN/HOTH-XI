@@ -72,8 +72,12 @@ function App() {
             <Letter ind = "A"/>
           </div>
 
+          <div className="inputbox">
+          <FormsAndInputs onWordsChange={handleWordsChange} />
+        </div>
+
         <div className="userInput">
-          {wordList.map((word, index) => (
+          {wordList.reverse().map((word, index) => (
             <div key={index} className="word">
               {[...word].map((char, index) => (
                 <InputLetter key={index} ind={char} />
@@ -82,9 +86,6 @@ function App() {
           ))}
         </div>
         
-        <div className="inputbox">
-          <FormsAndInputs onWordsChange={handleWordsChange} />
-        </div>
       </main>
     </div>
   );
