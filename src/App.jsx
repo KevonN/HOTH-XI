@@ -6,7 +6,6 @@ import FormsAndInputs from './components/InputBox';
 import Letter from './components/Letters';
 import InputLetter from './components/inputLetters';
 import Controls from './components/gamecontrols';
-// import getTime from './components/game/getTime';
 
 function App() {
   const [wordList, setWordList] = useState([]);
@@ -31,16 +30,16 @@ function App() {
             <Letter ind = "A"/>
           </div>
 
-      <div className="gameStats">
+      {/* <div className="gameStats">
         <Controls 
           title="timer" 
-          info="00:00" 
+          info="00:00"
         />
         <Controls 
           title="score" 
           info="count" 
         />
-      </div>
+      </div> */}
 
           <div className="inputbox">
           <FormsAndInputs onWordsChange={handleWordsChange} />
