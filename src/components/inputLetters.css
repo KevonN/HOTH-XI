@@ -4,11 +4,10 @@
     border: 2px solid rgb(255, 255, 255);
     color: #293a49;
     padding: 0.7em 1.2em;
-    font-size: 1.3em;
+    font-size: 22px;
     font-weight: 600;
     font-family: inherit;
     background-color: #79c1e0;
-    transition: border-color 0.25s;
     position: relative;
     width: 35px;
     margin: 3px 1px;

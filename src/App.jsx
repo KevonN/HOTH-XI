@@ -77,7 +77,7 @@ function App() {
         </div>
 
         <div className="userInput">
-          {wordList.reverse().map((word, index) => (
+          {wordList.map((word, index) => (
             <div key={index} className="word">
               {[...word].map((char, index) => (
                 <InputLetter key={index} ind={char} />
