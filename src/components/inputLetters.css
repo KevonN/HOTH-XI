@@ -4,13 +4,13 @@
     border: 2px solid rgb(255, 255, 255);
     color: #293a49;
     padding: 0.6em 1.2em;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 600;
     font-family: inherit;
     background-color: #79c1e0;
     transition: border-color 0.25s;
     position: relative;
-    width: 5%;
+    width: 40px;
     margin: 5%;
   }
  /* button:hover {
