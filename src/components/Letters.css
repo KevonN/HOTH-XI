@@ -19,3 +19,30 @@
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+
+#letterButton::before, #letterButton::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  top: -20px;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+
+#letterButton::before {
+  border-bottom: 20px solid #90bd70;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: -2px 0 0 0 #5f5045;
+}
+
+#letterButton::after {
+  border-bottom: 20px solid #afd593;
+  transform: translateX(-50%) rotate(-45deg);
+  box-shadow: 2px 0 0 0 #5c4230;
+}
+
+#letterButton:hover::before, #letterButton:hover::after {
+  border-bottom-width: 25px;
+} 

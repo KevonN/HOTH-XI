@@ -6,8 +6,9 @@
 
 #userInputForm {
     font-family: inherit;
+    padding: 7px;
     border-radius: 5px;
-    border: 7px solid rgb(255, 255, 255);
+    border: 3px solid #fff4e2;
     font-size: 1.3em;
     color: #79c1e0;
     margin-right: 5px;
@@ -22,8 +23,12 @@
     font-size: 1.2em;
     font-weight: 600;
     font-family: inherit;
-    background-color: #79c1e0;
+    background-color: #fcd490;
     transition: border-color 0.25s;
     position: relative;
     margin-left: 5px;
 }
+
+#submitButton:hover {
+    background-color: #ffd0c5;
+  }

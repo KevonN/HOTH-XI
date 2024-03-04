@@ -48,6 +48,7 @@ import './App.css';
 import FormsAndInputs from './components/InputBox';
 import Letter from './components/Letters';
 import InputLetter from './components/inputLetters';
+import Controls from './components/gamecontrols';
 
 function App() {
   const [wordList, setWordList] = useState([]);
@@ -71,6 +72,17 @@ function App() {
             <Letter ind = "A"/>
             <Letter ind = "A"/>
           </div>
+
+      <div className="gameStats">
+        <Controls 
+          title="timer" 
+          info="00:00" 
+        />
+        <Controls 
+          title="score" 
+          info="0000" 
+        />
+      </div>
 
           <div className="inputbox">
           <FormsAndInputs onWordsChange={handleWordsChange} />
