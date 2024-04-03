@@ -1,0 +1,29 @@
+
+.provided {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 3% 7% 1% 7%;
+    width: 70% 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#beginButton {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    color: #293a49;
+    padding: 0.4em 1.2em;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: inherit;
+    background-color: #fcd490;
+    transition: border-color 0.25s;
+    position: relative;
+    margin-left: 5px;
+}
+
+#beginButton:hover {
+    background-color: #ffd0c5;
+  }
